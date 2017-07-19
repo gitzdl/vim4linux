@@ -327,7 +327,7 @@ colorscheme desert
 set background=dark
 
 "置粘贴模式，这样粘贴过来的程序代码就不会错位了。设置后SuperTab无效;
-set paste
+"set paste
 
 "记录上次关闭的文件及状态
 set viminfo='10,\"100,:20,%,n~/._viminfo
@@ -468,3 +468,5 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     inoremap <leader>; <C-x><C-o>
     nnoremap <leader>jd :YcmCompleter GoTo<CR>
     nnoremap <leader>ji :YcmCompleter GoToInclude<CR>
+
+set noundofile
