@@ -1,6 +1,6 @@
-"æ˜¯å¦å…¼å®¹VIï¼Œcompatibleä¸ºå…¼å®¹ï¼Œnocompatibleä¸ºä¸å®Œå…¨å…¼å®¹
-"å»æ‰æœ‰å…³viä¸€è‡´æ€§æ¨¡å¼ï¼Œé¿å…ä»¥å‰ç‰ˆæœ¬çš„ä¸€äº›bugå’Œå±€é™
-"å¦‚æœè®¾ç½®ä¸ºcompatibleï¼Œåˆ™tabå°†ä¸ä¼šå˜æˆç©ºæ ¼
+"ÊÇ·ñ¼æÈİVI£¬compatibleÎª¼æÈİ£¬nocompatibleÎª²»ÍêÈ«¼æÈİ
+"È¥µôÓĞ¹ØviÒ»ÖÂĞÔÄ£Ê½£¬±ÜÃâÒÔÇ°°æ±¾µÄÒ»Ğ©bugºÍ¾ÖÏŞ
+"Èç¹ûÉèÖÃÎªcompatible£¬Ôòtab½«²»»á±ä³É¿Õ¸ñ
 set nocompatible
 
 if &term =~ 'xterm'
@@ -65,11 +65,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-"å¯¼å…¥é…ç½®æ–‡ä»¶
-"æŸ¥çœ‹$VIMRUNTIMEå‘½ä»¤ä¸º :echo $VIMRUNTIME
+"µ¼ÈëÅäÖÃÎÄ¼ş
+"²é¿´$VIMRUNTIMEÃüÁîÎª :echo $VIMRUNTIME
 source $VIMRUNTIME/vimrc_example.vim
 
-"è®¾ç½®é¼ æ ‡è¿è¡Œæ¨¡å¼ä¸ºWINDOWSæ¨¡å¼
+"ÉèÖÃÊó±êÔËĞĞÄ£Ê½ÎªWINDOWSÄ£Ê½
 behave mswin
 
 "set diffexpr=MyDiff()
@@ -104,124 +104,124 @@ behave mswin
 
 
 
-"è®¾ç½®ç»ˆç«¯é¢œè‰²
+"ÉèÖÃÖÕ¶ËÑÕÉ«
 set t_Co=256
 
-"è§£å†³èœå•ä¹±ç 
+"½â¾ö²Ëµ¥ÂÒÂë
 set termencoding=zh_CN
 "set termencoding=utf-8
 set encoding=utf-8
-"fileencodingséœ€è¦æ³¨æ„é¡ºåºï¼Œå‰é¢çš„å­—ç¬¦é›†åº”è¯¥æ¯”åé¢çš„å­—ç¬¦é›†å¤§
+"fileencodingsĞèÒª×¢ÒâË³Ğò£¬Ç°ÃæµÄ×Ö·û¼¯Ó¦¸Ã±ÈºóÃæµÄ×Ö·û¼¯´ó
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5,euc-jp,euc-kr,latin1
 set fileencoding=utf-8
 
-"èœå•ä½¿ç”¨çš„è¯­è¨€
+"²Ëµ¥Ê¹ÓÃµÄÓïÑÔ
 set langmenu=zh_CN.utf-8
 
-"å¼€å§‹ç¼–è¾‘å‘½ä»¤è¡Œæ—¶ä½¿ç”¨IM
+"¿ªÊ¼±à¼­ÃüÁîĞĞÊ±Ê¹ÓÃIM
 set imcmdline
 
-"åˆ é™¤æ‰€æœ‰èœå•ï¼Œä»¥ä¾¿é‡æ–°å®šä¹‰
+"É¾³ıËùÓĞ²Ëµ¥£¬ÒÔ±ãÖØĞÂ¶¨Òå
 source $VIMRUNTIME/delmenu.vim
 
-"å¯¼å…¥é»˜è®¤èœå•
+"µ¼ÈëÄ¬ÈÏ²Ëµ¥
 source $VIMRUNTIME/menu.vim
 
-"è§£å†³consleè¾“å‡ºçš„æç¤ºä¿¡æ¯ä¹±ç 
+"½â¾öconsleÊä³öµÄÌáÊ¾ĞÅÏ¢ÂÒÂë
 language messages zh_CN.utf-8
 
 
 
-" è‡ªåŠ¨å…³é—­è¡¥å…¨çª—å£
+" ×Ô¶¯¹Ø±Õ²¹È«´°¿Ú
 " au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 " set completeopt=menuone,menu,longest
-"æ’å…¥æ¨¡å¼è¡¥å…¨ä½¿ç”¨çš„é€‰é¡¹
+"²åÈëÄ£Ê½²¹È«Ê¹ÓÃµÄÑ¡Ïî
 set completeopt=longest,menu
 
-"è¯­æ³•é«˜äº®
+"Óï·¨¸ßÁÁ
 syntax on
 
-"è®¾ç½®åœ¨å“ªäº›æ¨¡å¼ä¸‹ä½¿ç”¨é¼ æ ‡åŠŸèƒ½ï¼Œmouse=a è¡¨ç¤ºæ‰€æœ‰æ¨¡å¼
+"ÉèÖÃÔÚÄÄĞ©Ä£Ê½ÏÂÊ¹ÓÃÊó±ê¹¦ÄÜ£¬mouse=a ±íÊ¾ËùÓĞÄ£Ê½
 set mouse=
-"è®¾ç½® Backspace å’Œ Delete çš„çµæ´»ç¨‹åº¦ï¼Œbackspace=2 åˆ™æ²¡æœ‰ä»»ä½•é™åˆ¶
+"ÉèÖÃ Backspace ºÍ Delete µÄÁé»î³Ì¶È£¬backspace=2 ÔòÃ»ÓĞÈÎºÎÏŞÖÆ
 set backspace=2
 
-"æ˜¯å¦è‡ªåŠ¨æ¢è¡Œ
+"ÊÇ·ñ×Ô¶¯»»ĞĞ
 set wrap
-"æ­£ç¡®åœ°å¤„ç†ä¸­æ–‡å­—ç¬¦çš„æŠ˜è¡Œå’Œæ‹¼æ¥
+"ÕıÈ·µØ´¦ÀíÖĞÎÄ×Ö·ûµÄÕÛĞĞºÍÆ´½Ó
 set formatoptions+=mM
-"è®¾ç½®è¶…è¿‡100å­—ç¬¦è‡ªåŠ¨æ¢è¡Œ
+"ÉèÖÃ³¬¹ı100×Ö·û×Ô¶¯»»ĞĞ
 set textwidth=100
 
-"æ™ºèƒ½å¯¹é½æ–¹å¼
+"ÖÇÄÜ¶ÔÆë·½Ê½
 set smartindent
-"ä¸€ä¸ªtabæ˜¯2ä¸ªå­—ç¬¦
+"Ò»¸ötabÊÇ2¸ö×Ö·û
 set tabstop=2
-"æŒ‰ä¸€æ¬¡tabå‰è¿›4ä¸ªå­—ç¬¦
-set softtabstop=4
-"ç”¨ç©ºæ ¼ä»£æ›¿tab
+"°´Ò»´ÎtabÇ°½ø2¸ö×Ö·û
+set softtabstop=2
+"ÓÃ¿Õ¸ñ´úÌætab
 set expandtab
-"ç¼©è¿›çš„å­—ç¬¦ä¸ªæ•°
+"Ëõ½øµÄ×Ö·û¸öÊı
 set cindent shiftwidth=2
 set autoindent shiftwidth=2
 
-"è®¾ç½®æŠ˜å 
-"è®¾ç½®æŠ˜å åˆ—æ•°
+"ÉèÖÃÕÛµş
+"ÉèÖÃÕÛµşÁĞÊı
 set foldcolumn=4
-"å…‰æ ‡é‡åˆ°æŠ˜å ï¼ŒæŠ˜å å°±æ‰“å¼€
+"¹â±êÓöµ½ÕÛµş£¬ÕÛµş¾Í´ò¿ª
 "set foldopen=all
-"ç§»å¼€æŠ˜å æ—¶è‡ªåŠ¨å…³é—­æŠ˜å 
+"ÒÆ¿ªÕÛµşÊ±×Ô¶¯¹Ø±ÕÕÛµş
 "set foldclose=all
 "zf zo zc zd zr zm zR zM zn zi zN
-"ä¾ç¼©è¿›æŠ˜å 
-"   manual  æ‰‹å·¥å®šä¹‰æŠ˜å 
-"   indent  æ›´å¤šçš„ç¼©è¿›è¡¨ç¤ºæ›´é«˜çº§åˆ«çš„æŠ˜å 
-"   expr    ç”¨è¡¨è¾¾å¼æ¥å®šä¹‰æŠ˜å 
-"   syntax  ç”¨è¯­æ³•é«˜äº®æ¥å®šä¹‰æŠ˜å 
-"   diff    å¯¹æ²¡æœ‰æ›´æ”¹çš„æ–‡æœ¬è¿›è¡ŒæŠ˜å 
-"   marker  å¯¹æ–‡ä¸­çš„æ ‡å¿—æŠ˜å 
+"ÒÀËõ½øÕÛµş
+"   manual  ÊÖ¹¤¶¨ÒåÕÛµş
+"   indent  ¸ü¶àµÄËõ½ø±íÊ¾¸ü¸ß¼¶±ğµÄÕÛµş
+"   expr    ÓÃ±í´ïÊ½À´¶¨ÒåÕÛµş
+"   syntax  ÓÃÓï·¨¸ßÁÁÀ´¶¨ÒåÕÛµş
+"   diff    ¶ÔÃ»ÓĞ¸ü¸ÄµÄÎÄ±¾½øĞĞÕÛµş
+"   marker  ¶ÔÎÄÖĞµÄ±êÖ¾ÕÛµş
 set foldmethod=syntax
-"å¯åŠ¨æ—¶ä¸è¦è‡ªåŠ¨æŠ˜å ä»£ç 
+"Æô¶¯Ê±²»Òª×Ô¶¯ÕÛµş´úÂë
 set foldlevel=100
 
-"æ˜¾ç¤ºè¡Œå·
+"ÏÔÊ¾ĞĞºÅ
 set number
 
-"æ‰“å¼€å…‰æ ‡çš„è¡Œåˆ—ä½ç½®æ˜¾ç¤ºåŠŸèƒ½
+"´ò¿ª¹â±êµÄĞĞÁĞÎ»ÖÃÏÔÊ¾¹¦ÄÜ
 set ruler
 
-"å¦‚ä½•å¤„ç†æœ‰å¤šç§å®½åº¦çš„ Unicode å­—ç¬¦,è®¾ç½®æ˜¾ç¤ºä¸­æ–‡å¼•å·
+"ÈçºÎ´¦ÀíÓĞ¶àÖÖ¿í¶ÈµÄ Unicode ×Ö·û,ÉèÖÃÏÔÊ¾ÖĞÎÄÒıºÅ
 set ambiwidth=double
 
-"è¡Œé«˜äº®
+"ĞĞ¸ßÁÁ
 "set cursorline
-"åˆ—é«˜äº®ï¼Œä¸å‡½æ•°åˆ—è¡¨æœ‰å†²çª
+"ÁĞ¸ßÁÁ£¬Óëº¯ÊıÁĞ±íÓĞ³åÍ»
 "set cursorcolumn
 
-"è®¾ç½®å‘½ä»¤è¡Œçš„é«˜åº¦
+"ÉèÖÃÃüÁîĞĞµÄ¸ß¶È
 set cmdheight=2
 
-"é«˜äº®æœç´¢çš„å…³é”®å­—
+"¸ßÁÁËÑË÷µÄ¹Ø¼ü×Ö
 set hlsearch
 
-"æœç´¢å¿½ç•¥å¤§å°å†™
+"ËÑË÷ºöÂÔ´óĞ¡Ğ´
 set ignorecase
 
-"è®¾ç½®å‘½ä»¤å†å²è¡Œæ•°
+"ÉèÖÃÃüÁîÀúÊ·ĞĞÊı
 set history=100
 
-"å¯åŠ¨çš„æ—¶å€™ä¸æ˜¾ç¤ºé‚£ä¸ªæ´åŠ©ç´¢é©¬é‡Œå„¿ç«¥çš„æç¤º
+"Æô¶¯µÄÊ±ºò²»ÏÔÊ¾ÄÇ¸öÔ®ÖúË÷ÂíÀï¶ùÍ¯µÄÌáÊ¾
 set shortmess=atI
 
-"å…³é—­ç»ˆç«¯å“é“ƒ
+"¹Ø±ÕÖÕ¶ËÏìÁå
 set noerrorbells
 set vb t_vb=
-"ä¸è¦é—ªçƒ
+"²»ÒªÉÁË¸
 set novisualbell
 
 
-"è®¾ç½®VIMçŠ¶æ€æ 
-set laststatus=2 "æ˜¾ç¤ºçŠ¶æ€æ (é»˜è®¤å€¼ä¸º1, æ— æ³•æ˜¾ç¤ºçŠ¶æ€æ )
+"ÉèÖÃVIM×´Ì¬À¸
+set laststatus=2 "ÏÔÊ¾×´Ì¬À¸(Ä¬ÈÏÖµÎª1, ÎŞ·¨ÏÔÊ¾×´Ì¬À¸)
 set statusline=
 set statusline+=%2*%-3.3n%0*\                       " buffer number
 set statusline+=%f\                                 " file name
@@ -240,125 +240,125 @@ if filereadable(expand("$VIM/vimfiles/plugin/vimbuddy.vim"))
     set statusline+=\ %{VimBuddy()}                 " vim buddy
 endif
 
-"çŠ¶æ€è¡Œé¢œè‰²
+"×´Ì¬ĞĞÑÕÉ«
 "highlight StatusLine guifg=SlateBlue guibg=Yellow
 "highlight StatusLineNC guifg=Gray guibg=White
 
-"å¢å¼ºæ¨¡å¼ä¸­çš„å‘½ä»¤è¡Œè‡ªåŠ¨å®Œæˆèœå•è¡¥å…¨æ“ä½œ
+"ÔöÇ¿Ä£Ê½ÖĞµÄÃüÁîĞĞ×Ô¶¯Íê³É²Ëµ¥²¹È«²Ù×÷
 set wildmenu
 
-"ç¼ºçœä¸äº§ç”Ÿå¤‡ä»½æ–‡ä»¶
+"È±Ê¡²»²úÉú±¸·İÎÄ¼ş
 set nobackup
-"åœ¨è¾“å…¥æ‹¬å·æ—¶å…‰æ ‡ä¼šçŸ­æš‚åœ°è·³åˆ°ä¸ä¹‹ç›¸åŒ¹é…çš„æ‹¬å·å¤„ï¼Œä¸å½±å“è¾“å…¥
+"ÔÚÊäÈëÀ¨ºÅÊ±¹â±ê»á¶ÌÔİµØÌøµ½ÓëÖ®ÏàÆ¥ÅäµÄÀ¨ºÅ´¦£¬²»Ó°ÏìÊäÈë
 set showmatch
 
-"è®¾å®šæ–‡ä»¶æµè§ˆå™¨ç›®å½•ä¸ºå½“å‰ç›®å½•
+"Éè¶¨ÎÄ¼şä¯ÀÀÆ÷Ä¿Â¼Îªµ±Ç°Ä¿Â¼
 set bsdir=buffer
-"è‡ªåŠ¨é‡æ–°åŠ è½½å¤–éƒ¨ä¿®æ”¹å†…å®¹
+"×Ô¶¯ÖØĞÂ¼ÓÔØÍâ²¿ĞŞ¸ÄÄÚÈİ
 set autoread
 
-"å…è®¸åœ¨æœ‰æœªä¿å­˜çš„ä¿®æ”¹æ—¶åˆ‡æ¢ç¼“å†²åŒº
+"ÔÊĞíÔÚÓĞÎ´±£´æµÄĞŞ¸ÄÊ±ÇĞ»»»º³åÇø
 set hidden
 
-"é€‰ä¸­ä¸€æ®µæ–‡å­—å¹¶å…¨æ–‡æœç´¢è¿™æ®µæ–‡å­—
+"Ñ¡ÖĞÒ»¶ÎÎÄ×Ö²¢È«ÎÄËÑË÷Õâ¶ÎÎÄ×Ö
 vmap <silent> ,/ y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 vmap <silent> ,? y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 
-"è¿›å…¥å½“å‰ç¼–è¾‘çš„æ–‡ä»¶çš„ç›®å½•
+"½øÈëµ±Ç°±à¼­µÄÎÄ¼şµÄÄ¿Â¼
 autocmd BufEnter * exec "cd %:p:h"
 
-"ä¿å­˜æ–‡ä»¶çš„æ ¼å¼é¡ºåº
+"±£´æÎÄ¼şµÄ¸ñÊ½Ë³Ğò
 set fileformats=unix,dos
 
-"é…è‰²ï¼ˆæ›´å¤šçš„é…è‰²è§colorsç›®å½•å’Œhttp://www.cs.cmu.edu/~maverick/VimColorSchemeTest/index-c.htmlï¼‰
+"ÅäÉ«£¨¸ü¶àµÄÅäÉ«¼ûcolorsÄ¿Â¼ºÍhttp://www.cs.cmu.edu/~maverick/VimColorSchemeTest/index-c.html£©
 colorscheme desert
 set background=dark
 
-"ç½®ç²˜è´´æ¨¡å¼ï¼Œè¿™æ ·ç²˜è´´è¿‡æ¥çš„ç¨‹åºä»£ç å°±ä¸ä¼šé”™ä½äº†ã€‚è®¾ç½®åSuperTabæ— æ•ˆ;
+"ÖÃÕ³ÌùÄ£Ê½£¬ÕâÑùÕ³Ìù¹ıÀ´µÄ³ÌĞò´úÂë¾Í²»»á´íÎ»ÁË¡£ÉèÖÃºóSuperTabÎŞĞ§;
 "set paste
 
-"è®°å½•ä¸Šæ¬¡å…³é—­çš„æ–‡ä»¶åŠçŠ¶æ€
+"¼ÇÂ¼ÉÏ´Î¹Ø±ÕµÄÎÄ¼ş¼°×´Ì¬
 set viminfo='10,\"100,:20,%,n~/._viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
-    "è®¾ç½®æ’ä»¶SuperTab
-    "è®¾ç½®æŒ‰ä¸‹<Tab>åé»˜è®¤çš„è¡¥å…¨æ–¹å¼, é»˜è®¤æ˜¯<C-P>,
-    "ç°åœ¨æ”¹ä¸º<C-X><C-O>. å…³äº<C-P>çš„è¡¥å…¨æ–¹å¼,
-    "è¿˜æœ‰å…¶ä»–çš„è¡¥å…¨æ–¹å¼, å¯ä»¥çœ‹çœ‹ä¸‹é¢çš„ä¸€äº›å¸®åŠ©:
+    "ÉèÖÃ²å¼şSuperTab
+    "ÉèÖÃ°´ÏÂ<Tab>ºóÄ¬ÈÏµÄ²¹È«·½Ê½, Ä¬ÈÏÊÇ<C-P>,
+    "ÏÖÔÚ¸ÄÎª<C-X><C-O>. ¹ØÓÚ<C-P>µÄ²¹È«·½Ê½,
+    "»¹ÓĞÆäËûµÄ²¹È«·½Ê½, ¿ÉÒÔ¿´¿´ÏÂÃæµÄÒ»Ğ©°ïÖú:
     ":help ins-completion
     ":help compl-omni
-    "0 - ä¸è®°å½•ä¸Šæ¬¡çš„è¡¥å…¨æ–¹å¼
-    "1 - è®°ä½ä¸Šæ¬¡çš„è¡¥å…¨æ–¹å¼,ç›´åˆ°ç”¨å…¶ä»–çš„è¡¥å…¨å‘½ä»¤æ”¹å˜å®ƒ
-    "2 - è®°ä½ä¸Šæ¬¡çš„è¡¥å…¨æ–¹å¼,ç›´åˆ°æŒ‰ESCé€€å‡ºæ’å…¥æ¨¡å¼ä¸ºæ­¢
+    "0 - ²»¼ÇÂ¼ÉÏ´ÎµÄ²¹È«·½Ê½
+    "1 - ¼Ç×¡ÉÏ´ÎµÄ²¹È«·½Ê½,Ö±µ½ÓÃÆäËûµÄ²¹È«ÃüÁî¸Ä±äËü
+    "2 - ¼Ç×¡ÉÏ´ÎµÄ²¹È«·½Ê½,Ö±µ½°´ESCÍË³ö²åÈëÄ£Ê½ÎªÖ¹
     "let g:SuperTabRetainCompletionType=2
     "let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
 
-    "F2è®¾ç½®å…³é—­æœç´¢é«˜äº®
+    "F2ÉèÖÃ¹Ø±ÕËÑË÷¸ßÁÁ
     nmap <F2> :nohl<CR>
 
-    "ç»™næ˜ å°„ä¸€ä¸ªå¿«æ·é”®ï¼Œä¹ æƒ¯ä¸Šå–œæ¬¢ç”¨F3
+    "¸ønÓ³ÉäÒ»¸ö¿ì½İ¼ü£¬Ï°¹ßÉÏÏ²»¶ÓÃF3
     nmap <F3> :cn<CR>
-    "ç»™Næ˜ å°„ä¸€ä¸ªå¿«æ·é”®ï¼Œä¹ æƒ¯ä¸Šå–œæ¬¢ç”¨F3
+    "¸øNÓ³ÉäÒ»¸ö¿ì½İ¼ü£¬Ï°¹ßÉÏÏ²»¶ÓÃF3
 
     nmap <S-F3> :cp<CR>
 
-    "F4æ˜ å°„ä¸ºåˆ‡æ¢å¤´æ–‡ä»¶
+    "F4Ó³ÉäÎªÇĞ»»Í·ÎÄ¼ş
     nmap <F4> :A<CR>
-    "Shift-F4æ˜ å°„ä¸ºæ°´å¹³åˆ†å‰²å¹¶åˆ‡æ¢å¤´æ–‡ä»¶
+    "Shift-F4Ó³ÉäÎªË®Æ½·Ö¸î²¢ÇĞ»»Í·ÎÄ¼ş
     nmap <S-F4> :AV<CR>
-    "Ctrl-F4æ˜ å°„ä¸ºæ–°å»ºå¤´æ–‡ä»¶å¹¶åˆ‡æ¢
+    "Ctrl-F4Ó³ÉäÎªĞÂ½¨Í·ÎÄ¼ş²¢ÇĞ»»
     nmap <C-F4> :AT<CR>
 
-    "<F5>åˆ·æ–°Buffer
+    "<F5>Ë¢ĞÂBuffer
     nmap <F5>   :e<CR>
 
-    "F6å•ç‹¬åˆ‡æ¢æ‰“å¼€nerd_treeï¼ˆnerd_treeæ’ä»¶ï¼‰
-    let g:NERDChristmasTree = 1              "è‰²å½©æ˜¾ç¤º
-    let g:NERDTreeShowHidden = 1             "æ˜¾ç¤ºéšè—æ–‡ä»¶
-    let g:NERDTreeWinPos = 'left'            "çª—å£æ˜¾ç¤ºä½ç½®
-    let g:NERDTreeHighlightCursorline = 0    "é«˜äº®å½“å‰è¡Œ
+    "F6µ¥¶ÀÇĞ»»´ò¿ªnerd_tree£¨nerd_tree²å¼ş£©
+    let g:NERDChristmasTree = 1              "É«²ÊÏÔÊ¾
+    let g:NERDTreeShowHidden = 1             "ÏÔÊ¾Òş²ØÎÄ¼ş
+    let g:NERDTreeWinPos = 'left'            "´°¿ÚÏÔÊ¾Î»ÖÃ
+    let g:NERDTreeHighlightCursorline = 0    "¸ßÁÁµ±Ç°ĞĞ
     nmap <F6>  :NERDTreeToggle<CR>
 
-    "F7å•ç‹¬åˆ‡æ¢æ‰“å¼€taglistï¼ˆtaglistæ’ä»¶ï¼‰
-    let g:Tlist_Sort_Type = 'name'          "ä»¥åç§°é¡ºåºæ’åºï¼Œé»˜è®¤ä»¥ä½ç½®é¡ºåº(order)
-    let g:Tlist_Show_One_File = 1           "ä¸åŒæ—¶æ˜¾ç¤ºå¤šä¸ªæ–‡ä»¶çš„tagï¼Œåªæ˜¾ç¤ºå½“å‰æ–‡ä»¶çš„
-    let g:Tlist_Exit_OnlyWindow = 1         "å¦‚æœtaglistçª—å£æ˜¯æœ€åä¸€ä¸ªçª—å£ï¼Œåˆ™é€€å‡ºvim
-    lef g:Tlist_File_Fold_Auto_Close = 1    "å½“å…‰æ ‡ä¸åœ¨ç¼–è¾‘æ–‡ä»¶é‡Œé¢çš„æ—¶å€™å…¨éƒ¨æŠ˜å 
-    let g:Tlist_Use_Right_Window = 1        "åœ¨å³ä¾§çª—å£ä¸­æ˜¾ç¤ºtaglistçª—å£
-    "let g:Tlist_Enable_Fold_Column = 1      "æ˜¾ç¤ºæŠ˜å è¾¹æ 
-    let g:Tlist_Winwidth = 20                "è®¾ç½®taglistçª—å£å®½åº¦
+    "F7µ¥¶ÀÇĞ»»´ò¿ªtaglist£¨taglist²å¼ş£©
+    let g:Tlist_Sort_Type = 'name'          "ÒÔÃû³ÆË³ĞòÅÅĞò£¬Ä¬ÈÏÒÔÎ»ÖÃË³Ğò(order)
+    let g:Tlist_Show_One_File = 1           "²»Í¬Ê±ÏÔÊ¾¶à¸öÎÄ¼şµÄtag£¬Ö»ÏÔÊ¾µ±Ç°ÎÄ¼şµÄ
+    let g:Tlist_Exit_OnlyWindow = 1         "Èç¹ûtaglist´°¿ÚÊÇ×îºóÒ»¸ö´°¿Ú£¬ÔòÍË³övim
+    lef g:Tlist_File_Fold_Auto_Close = 1    "µ±¹â±ê²»ÔÚ±à¼­ÎÄ¼şÀïÃæµÄÊ±ºòÈ«²¿ÕÛµş
+    let g:Tlist_Use_Right_Window = 1        "ÔÚÓÒ²à´°¿ÚÖĞÏÔÊ¾taglist´°¿Ú
+    "let g:Tlist_Enable_Fold_Column = 1      "ÏÔÊ¾ÕÛµş±ßÀ¸
+    let g:Tlist_Winwidth = 20                "ÉèÖÃtaglist´°¿Ú¿í¶È
     "let g:Tlist_Inc_Winwidth = 0
     "let g:Tlist_WinHeight = 5
-    let g:Tlist_GainFocus_On_ToggleOpen = 1 "TlistToggleæ‰“å¼€taglistçª—å£æ—¶ï¼Œå¦‚æœå¸Œæœ›è¾“å…¥ç„¦ç‚¹åœ¨taglistçª—å£ä¸­
+    let g:Tlist_GainFocus_On_ToggleOpen = 1 "TlistToggle´ò¿ªtaglist´°¿ÚÊ±£¬Èç¹ûÏ£ÍûÊäÈë½¹µãÔÚtaglist´°¿ÚÖĞ
     nmap <F7>  :Tlist<CR>
 
     "F9 WinManager
     "-- WinManager setting --
-    "è®¾ç½®æˆ‘ä»¬è¦ç®¡ç†çš„æ’ä»¶
+    "ÉèÖÃÎÒÃÇÒª¹ÜÀíµÄ²å¼ş
     let g:winManagerWindowLayout='FileExplorer,BufExplorer|TagList'
-    "å¦‚æœæ‰€æœ‰ç¼–è¾‘æ–‡ä»¶éƒ½å…³é—­äº†ï¼Œé€€å‡ºvim
+    "Èç¹ûËùÓĞ±à¼­ÎÄ¼ş¶¼¹Ø±ÕÁË£¬ÍË³övim
     let g:persistentBehaviour=0
-    "è¿›å…¥VIMè‡ªåŠ¨æ‰“å¼€winmanager
+    "½øÈëVIM×Ô¶¯´ò¿ªwinmanager
     "let g:AutoOpenWinManager = 1
     nmap <F9>  :WMToggle<CR>
 
 
 
-    "F10æŸ¥çœ‹æ‰“å¼€çš„æ–‡ä»¶åˆ—è¡¨ï¼ˆbufexploreræ’ä»¶ï¼‰
+    "F10²é¿´´ò¿ªµÄÎÄ¼şÁĞ±í£¨bufexplorer²å¼ş£©
     let g:bufExplorerDefaultHelp = 1
     let g:bufExplorerDetailedHelp = 0
     nmap <F10> :BufExplorer <CR>
 
 
-    "F12ç”Ÿæˆ/æ›´æ–°tagsæ–‡ä»¶
+    "F12Éú³É/¸üĞÂtagsÎÄ¼ş
     set tags=tags;
     set tags+=./tags;
     set tags+=/usr/include/tags;
     set tags+=~/STM32Libraries/tags;
     set tags+=~/Qt5.4.1/5.4/gcc_64/include/tags;
 
-    "è‡ªåŠ¨åˆ‡æ¢å½“å‰ç›®å½•ä¸ºå½“å‰æ–‡ä»¶æ‰€åœ¨çš„ç›®å½•
+    "×Ô¶¯ÇĞ»»µ±Ç°Ä¿Â¼Îªµ±Ç°ÎÄ¼şËùÔÚµÄÄ¿Â¼
     set autochdir
 
     function! UpdateTagsFile_cpp()
@@ -373,15 +373,15 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "nmap <S-F12> :call UpdateTagsFile()<CR>
     nmap <S-F12> :call UpdateTagsFile_c()<CR><CR>
 
-    "Ctrl + F12åˆ é™¤tagsæ–‡ä»¶
+    "Ctrl + F12É¾³ıtagsÎÄ¼ş
     function! DeleteTagsFile()
-        "Linuxä¸‹çš„åˆ é™¤æ–¹æ³•
+        "LinuxÏÂµÄÉ¾³ı·½·¨
         silent !rm tags
     endfunction
     nmap <C-F12> :call DeleteTagsFile()<CR>
-    "é€€å‡ºVIMä¹‹å‰åˆ é™¤tagsæ–‡ä»¶
+    "ÍË³öVIMÖ®Ç°É¾³ıtagsÎÄ¼ş
 
-    "VimIMé…ç½®
+    "VimIMÅäÖÃ
     let g:vimim_cloud = 'baidu,qq,google,sogou'
     "let g:vimim_map = 'tab_as_gi'
     "let g:vimim_mode = 'dynamic'
@@ -391,7 +391,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
     "let g:vimim_toggle = 'pinyin,google,sogou'
 
     "
-    "è®¾ç½®æ‹¬å·è‡ªåŠ¨è¡¥å…¨
+    "ÉèÖÃÀ¨ºÅ×Ô¶¯²¹È«
     "inoremap ( ()<Esc>i
     "inoremap [ []<Esc>i
     "inoremap { {<CR>}<Esc>O
@@ -399,15 +399,15 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 
 
-    "è®¾ç½®è¶…è¿‡100è¡Œæç¤ºçº¿
+    "ÉèÖÃ³¬¹ı100ĞĞÌáÊ¾Ïß
     set colorcolumn=100
 
 
-    "YCMé…ç½®é¡¹
-    let g:ycm_key_list_select_completion = ['<c-tab>', '<Down>']  "é‡æ˜ å°„é€‰æ‹©é”®
+    "YCMÅäÖÃÏî
+    let g:ycm_key_list_select_completion = ['<c-tab>', '<Down>']  "ÖØÓ³ÉäÑ¡Ôñ¼ü
     let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
-    let g:ycm_confirm_extra_conf = 0                            "å»æ‰ä½¿ç”¨å¤–éƒ¨é…ç½®ç¡®è®¤æç¤º
-    let g:ycm_complete_in_comments = 0                          "æ³¨é‡Šä¸­ä¸ä½¿ç”¨è¡¥å…¨
+    let g:ycm_confirm_extra_conf = 0                            "È¥µôÊ¹ÓÃÍâ²¿ÅäÖÃÈ·ÈÏÌáÊ¾
+    let g:ycm_complete_in_comments = 0                          "×¢ÊÍÖĞ²»Ê¹ÓÃ²¹È«
     let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
     let g:ycm_semantic_triggers = {}
     let g:ycm_semantic_triggers.c = ['.','->', 're!\w{2}']
