@@ -108,8 +108,7 @@ behave mswin
 set t_Co=256
 
 "解决菜单乱码
-set termencoding=zh_CN
-"set termencoding=utf-8
+set termencoding=utf-8
 set encoding=utf-8
 "fileencodings需要注意顺序，前面的字符集应该比后面的字符集大
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,big5,euc-jp,euc-kr,latin1
